@@ -11,7 +11,7 @@ class GPTDatasetLightStorev1(Dataset):
         token_ids = tokenizer.encode(txt)  # 1
 
         for i in range(0, len(token_ids) - max_length, stride):  # 2
-            chunk = token_ids[i: i + max_length + 1]
+            chunk = token_ids[i : i + max_length + 1]
             self.ids.append(torch.tensor(chunk))
 
     def __len__(self):  # 3

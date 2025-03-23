@@ -25,9 +25,13 @@ def download_and_load_gpt2(model_size, models_dir):
     base_url = "https://openaipublic.blob.core.windows.net/gpt-2/models"
     backup_base_url = "https://f001.backblazeb2.com/file/LLMs-from-scratch/gpt2"
     filenames = [
-        "checkpoint", "encoder.json", "hparams.json",
-        "model.ckpt.data-00000-of-00001", "model.ckpt.index",
-        "model.ckpt.meta", "vocab.bpe"
+        "checkpoint",
+        "encoder.json",
+        "hparams.json",
+        "model.ckpt.data-00000-of-00001",
+        "model.ckpt.index",
+        "model.ckpt.meta",
+        "vocab.bpe",
     ]
 
     # Download files
